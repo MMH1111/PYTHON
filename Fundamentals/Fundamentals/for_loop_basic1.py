@@ -10,5 +10,37 @@
 #                     - print only the integers that are a multiple of mult. 
 #                     - For example, if lowNum=2, highNum=9, and mult=3, the loop should print 3, 6, 9 (on successive lines)
 
-# 1. Basic 
-print
+# # 1. Basic 
+# for i in range(0, 151): #For loop. In parentheses, the first is the starting number (inclusive), the 2nd is the ending one exclusive, the 3rd specifies the count
+#     print(i)
+
+# print("-" * 25)
+
+# # 2. Multiples of Five
+# for i in range(5, 1001, 5):
+#     print(i)
+
+# print("-" * 25)
+
+# 3. Counting, the Dojo Way - NEED TO REVISE
+# num = 0
+# for i in range(1, 101):
+#     if num % 5:
+#         print("Coding")
+#     if num % 10:
+#         print("Dojo")
+#     print(i)
+
+# print("-" * 25)
+
+# 4. Whoa. That Sucker's Huge
+
+print("-" * 25)
+
+# 5. Countdown by Fours
+
+print("-" * 25)
+
+# 6. Flexible Counter
+
+print("-" * 25)
