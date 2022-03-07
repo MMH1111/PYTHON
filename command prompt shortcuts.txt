@@ -1,0 +1,7 @@
+use cd in command prompt
+
+C:\Users\miche\Desktop\Coding_Dojo\Assignments\PYTHON>python 
+
+C:\Users\miche\Desktop\Coding_Dojo\Assignments\PYTHON>python 3-72022-morningLecture.py
+
+../../.. (This goes up a folder.)
