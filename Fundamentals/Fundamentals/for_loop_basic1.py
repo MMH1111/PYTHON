@@ -12,10 +12,11 @@
 
 # print("-" * 25)
 
-# 3. Counting, the Dojo Way - NEED TO REVISE
+# 3. Counting, the Dojo Way
 # Print integers 1 to 100. 
-# - If divisible by 5, print "Coding" instead. 
-# - If divisible by 10, print "Coding Dojo".
+#If divisible by 5, print "Coding" instead. 
+#If divisible by 10, print "Coding Dojo".
+
 # for i in range(1, 101):
 #     if i % 10 == 0:
 #         print("Coding Dojo")
