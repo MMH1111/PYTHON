@@ -41,13 +41,31 @@ const expected5 = "";
  * @param {string} separator To separate each item of the given arr.
  * @returns {string} The given array items as a string separated by the given separator.
  */
-function join(arr1, separator) {
-  for(var i=0; i<arr1.length; i++){
-    return arr1[i] + separator1 + arr1[i + 1]
-  }
-}
-console.log(join)
 
+// function join(arr1, separator) {
+//   for(var i=0; i<arr1.length; i++){
+//     return arr1[i] + separator1 + arr1[i + 1]
+//   }
+// }
+// console.log(join)
+
+/**
+ * - Time: O(n) linear.
+ * - Space: O(n) linear.
+ */
+ function join(arr, separator = ", ") {
+  let joined = "";
+
+  if (!arr.length) {
+    return joined;
+  }
+
+  // less than arr.length - 1 to stop before last
+  for (let i = 0; i < arr.length - 1; i++) {
+    joined += arr[i] + separator;
+  }
+  return joined + arr[arr.length - 1];
+}
 
 //-------------------------------------------------------------------------------------------------------------------------
 
@@ -88,12 +106,26 @@ const expected7 = "LFNYISN";
   // if current letter is a space, pass string[i + 1].upper() to output
 // Return my output
 
-function acronymize(str) {
-  for(var i = 0; i<str.length; i++){
-    if(str[i] === " "){
-      str[i + 1].toUpperCase();
+/**
+ * - Time: O(n) linear because the nested loops increment i, so every iteration
+ *    of nested loops reduces iterations of outer loop.
+ * - Space: O(n) linear.
+ */
+ function acronymize(wordsStr) {
+  let acronym = "";
+  const len = wordsStr.length;
+
+  for (let i = 0; i < len; i++) {
+    while (wordsStr[i] === " " && i < len) {
+      i++; // skip spaces, handles multiple spaces
+    }
+    // upperCase it now while we are already looping
+    // to avoid upperCase having to loop over our output to upperCase
+    acronym += wordsStr[i].toUpperCase();
+
+    while (wordsStr[i] !== " " && i < len) {
+      i++; // skip rest of word
     }
   }
-  return str[i + 1]
+  return acronym;
 }
-console.log(acronymize(str1))

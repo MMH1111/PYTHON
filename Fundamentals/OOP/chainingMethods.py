@@ -32,22 +32,11 @@ chloe = User("Chloe")
 mayra = User("Mayra")
 
 #Have the first user make 3 deposits and 1 withdrawal and then display their balance
-michele.make_deposit(1200)
-michele.make_deposit(800)
-michele.make_deposit(1000)
-michele.make_withdrawal(2000)
-michele.display_user_balance()
+michele.make_deposit(1200).make_deposit(800).make_deposit(1000).make_withdrawal(2000).display_user_balance()
 #Have the second user make 2 deposits and 2 withdrawals and then display their balance
-chloe.make_deposit(500)
-chloe.make_deposit(750)
-chloe.make_withdrawal(250)
-chloe.display_user_balance()
+chloe.make_deposit(500).make_deposit(750).make_withdrawal(250).display_user_balance()
 #Have the third user make 1 deposits and 3 withdrawals and then display their balance  
-mayra.make_deposit(5000)
-mayra.make_withdrawal(250)
-mayra.make_withdrawal(100)
-mayra.make_withdrawal(200)
-mayra.display_user_balance()
+mayra.make_deposit(5000).make_withdrawal(250).make_withdrawal(100).make_withdrawal(200).display_user_balance()
 
 #BONUS: Have the first user transfer money to the third user and then print both users' balances
 michele.transfer_money(750, mayra)
