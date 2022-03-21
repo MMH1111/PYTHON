@@ -1,0 +1,55 @@
+cd desktop/coding_dojo/assignments/python/flask/fundamentals/
+
+To see if flask is installed
+pip list
+
+(hello_flask-xo0AJI6_) C:\Users\miche\Desktop\Coding_Dojo\Assignments\PYTHON\FLASK\fundamentals\hello_flask>pip list
+Package      Version
+------------ -------
+click        8.0.4
+colorama     0.4.4
+Flask        2.0.3        <--- shows Flask is installed
+itsdangerous 2.1.1
+Jinja2       3.0.3
+MarkupSafe   2.1.0
+pip          22.0.4
+setuptools   60.9.3
+Werkzeug     2.0.3
+wheel        0.37.1
+
+Package          Version
+---------------- ---------
+autopep8         1.6.0
+certifi          2021.10.8
+distlib          0.3.4
+filelock         3.6.0
+pip              22.0.4
+pipenv           2022.1.8    <--- shows pipenv is installed
+platformdirs     2.5.1
+pycodestyle      2.8.0
+six              1.16.0
+toml             0.10.2
+virtualenv       20.13.3
+virtualenv-clone 0.5.7
+
+
+try 
+python -m pip install pipenv
+then 
+python -m pipenv install flask     #1) Install flask once per assignment 
+then
+python -m pipenv shell             #2) Go into the shell every time I open a new terminal
+                                    # This will launch a subshell in virtual environment
+                                    # Alternatively, run a command inside the virtualenv with pipenv run.
+
+then 
+python server.py                    # or python ser + TAB, then ENTER
+
+then
+http://127.0.0.1:5000/              # paste in browser to view server.py file
+
+
+3) Only exit if i'm going to work on a new assignment
+C:\Users\miche\Desktop\Coding_Dojo\Assignments\PYTHON\FLASK\fundamentals\hello_flask>exit
+
+

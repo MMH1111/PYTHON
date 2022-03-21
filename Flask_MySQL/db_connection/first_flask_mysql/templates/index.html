@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Flask Project</title>
+</head>
+<body>
+    <h1>A Table of My Friends</h1>
+    <!-- START of Table -->
+    <table>
+        <!-- Table Head -->
+        <thead>
+            <!-- Table Headings -->
+            <tr>
+                <!-- Table Columns -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <!-- In the table body, create a row for each row in our database -->
+        <tbody> 
+            {% for one_friend in friends %}
+            <!-- Table Row -->
+            <tr>
+                <td>{{one_friend.first_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <!-- END of Table -->
+</body>
+</html>
+

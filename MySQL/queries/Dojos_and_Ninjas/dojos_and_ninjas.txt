@@ -1,0 +1,43 @@
+Create a .txt file where you'll save each of your queries from below
+SCHEMA - dojo_ninjas
+
+SELECT * FROM dojos;
+SELECT * FROM ninjas;
+
+Query: Create 3 new dojos
+INSERT INTO	dojos (name)
+VALUES ("Chicago"), ("Seattle"), ("Online");
+
+Query: Delete the 3 dojos you just created
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM dojos;
+-- SET SQL_SAFE_UPDATES = 0; //commented out versions
+-- DELETE FROM dojos;        //commented out versions
+
+
+Query: Create 3 more dojos
+Query: Create 3 ninjas that belong to the first dojo
+Query: Create 3 ninjas that belong to the second dojo
+Query: Create 3 ninjas that belong to the third dojo
+
+INSERT INTO ninjas (first_name, last_name, age, dojos_id)
+VALUES ("Michele", "Helm", 21, 7), ("Jack", "Sparrow", 21, 7), ("So", "Ji Sub", 21, 7),
+		("Kimura", "Takuya", 21, 8), ("Brad", "Pitt", 21, 8), ("Johnny", "Depp", 21, 8),
+		("Kate", "Winslet", 21, 9), ("Rachel", "McAdams", 21, 9), ("Jennifer", "Aniston", 21, 9);
+
+Query: Retrieve all the ninjas from the first dojo
+SELECT * FROM dojos
+LEFT JOIN ninjas ON dojos.id = ninjas.dojos_id
+WHERE dojos.id = 7;
+
+Query: Retrieve all the ninjas from the last dojo
+SELECT * FROM dojos
+LEFT JOIN ninjas ON dojos.id = ninjas.dojos_id
+	WHERE dojos.id = (SELECT dojo_id FROM ninjas ORDER BY dojos_id DESC LIMIT 1);
+
+Query: Retrieve the last ninja's dojo
+SELECT * FROM dojos
+WHERE dojos.id = (SELECT dojos_id FROM ninjas ORDER BY dojos_id DESC LIMIT 1);
+
+-- UPDATE dojos SET name = "John" where ID = 1;
+-- DELETE FROM dojos WHERE name = ("Istanbul");

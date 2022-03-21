@@ -1,0 +1,6 @@
+3-11-2022 Morning Lecture - Algos
+
+Can I use built-ins? (e.g. join or split)
+
+go forth do great things
+save the world

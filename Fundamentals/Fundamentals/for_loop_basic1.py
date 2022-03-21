@@ -1,7 +1,9 @@
 # print("-" * 25)
 
-# # 1. Basic 
-# for i in range(0, 151): #For loop. In parentheses, the first is the starting number (inclusive), the 2nd is the ending one exclusive, the 3rd specifies the count
+# # 1. Basic
+#For loop. In parentheses, the first is the starting number (inclusive), 
+# the 2nd is the ending one exclusive, the 3rd specifies the count
+# for i in range(0, 151): 
 #     print(i)
 
 # print("-" * 25)
@@ -18,9 +20,9 @@
 #If divisible by 10, print "Coding Dojo".
 
 # for i in range(1, 101):
-#     if i % 10 == 0:
+#     if i % 10 == 0: #means no remainder
 #         print("Coding Dojo")
-#     elif i % 5 == 0:
+#     elif i % 5 == 0: #elif is used to bypass first if statement
 #         print("Coding")
 #     else: 
 #         print(i)
@@ -29,11 +31,17 @@
 
 # 4. Whoa. That Sucker's Huge
 # Add odd integers from 0 to 500,000, and print the final sum.
+#Solution 1
+# sum = 0
+# for i in range(0,500001,2):
+#     sum += i
+# print(sum)
 
 # print("-" * 25)
 
 # sum = 0
 
+#Solution 2
 # for i in range(0, 500001):
 #     if i % 2 == 1: #means it's an odd number, since it has a remainder of 1.
 #         sum += i
@@ -45,6 +53,10 @@
 # while y > 0:
 #     print(y)
 #     y = y - 4
+
+#OR
+# for i in range(2018,0,-4):
+#     print(i)
 
 # print("-" * 25)
 

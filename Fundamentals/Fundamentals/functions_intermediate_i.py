@@ -72,6 +72,8 @@ def iterateDictionary2(key_name, some_list):
     first_name - John, last_name - Rosales
     first_name - Mark, last_name - Guillen
     first_name - KB, last_name - Tonel
+    for dict in some_list:
+        print(dict[key_name])
 
 #3. Get Values From a List of Dictionaries
 # Create a function iterateDictionary2(key_name, some_list) that, 
